@@ -35,7 +35,7 @@
 }
 
 body {
-    font-family: "Plus Jakarta Sans","Arial" sans-serif;
+    font-family: "Plus Jakarta Sans","Arial", sans-serif;
     margin: 0;
 }
 
@@ -172,38 +172,35 @@ img {
     line-height: 27px;
 }
 
-.project-box-link {
-    border-radius: 6px;
-    padding: 20px 40px;
-    width: 168px;
-    background: #1aab7b;
-    border: 1px solid  #1aab7b  ;
-}
-
 .project-link {
-    display: inline-block;
+    display: inline-flex;
+    padding: 20px 40px;
+    flex-direction: column;
+    align-items: flex-start;
     text-decoration: none;
     color: #fff;
+    text-align: center;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
+    font-weight: 700;
+    line-height: 19.2px;
+    border: 1.5px solid #1aab7b;
+    border-radius: 6px;
+    background-color: #1aab7b;
+    transition: color 0.3s linear, background-color 0.3s linear;
 }
-.project-box-link:hover{
-    background-color: #fff;
+
+.project-link:hover{
     color: #1aab7b;
-    
+    border-color: #1aab7b;
+    background-color: #fff;
+  
 }
-.project-box-link:hover .project-link{
-    color: #1AAB7B;
-}
-.project-box-link:active{
+.project-link:active{
     background-color: #1AAB7B;
-    color: #FFF;
+    color: #fff;
     opacity: 0.7;
 }
-.project-box-link:active .project-link{
-    color: #fff;
-}
+
 .service-help{
     padding-bottom: 100px;
 }
@@ -370,7 +367,39 @@ img {
     color: #636f87;;
     line-height:  27px ;
 }
-
+.workflow-item-desc:nth-child(2){
+    margin-right: 20px;
+}
+.site-title-wrappper{
+    width: 411px;
+    margin-right: auto;
+    margin-bottom: 16px;
+    margin-left: auto;  
+}
+.site-title{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #101010;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50.4px;
+}
+.site-desc-wrapper{
+   width: 650px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: 60px; 
+}
+.site-desc{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #636f87;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
 .site-footer{
     background-color: #101010;
 }
